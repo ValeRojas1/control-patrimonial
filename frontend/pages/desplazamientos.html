@@ -26,39 +26,44 @@
 
         <h3>Desplazamiento de Bienes</h3>
 
-        <div class="card p-4">
-            <div class="row g-3">
+       <div class="card p-4">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <input id="nro_desplazamiento" class="form-control" placeholder="N° Desplazamiento">
+            </div>
 
-                <div class="col-md-6">
-                    <input class="form-control" placeholder="N° Desplazamiento">
+            <div class="col-md-6">
+                <input id="fecha_desplazamiento" type="date" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <select id="select_origen" class="form-select">
+                    <option value="">Seleccione Persona Origen</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <select id="select_destino" class="form-select">
+                    <option value="">Seleccione Persona Destino</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <h6>Seleccione los bienes a transferir:</h6>
+                <div id="lista_bienes_origen" class="border p-3 bg-light" style="max-height: 200px; overflow-y: auto;">
+                    <p class="text-muted italic">Seleccione primero una persona de origen...</p>
                 </div>
+            </div>
 
-                <div class="col-md-6">
-                    <input type="date" class="form-control">
-                </div>
+            <div class="col-12">
+                <textarea id="txt_motivo" class="form-control" placeholder="Motivo (ej: renuncia, cambio de área)"></textarea>
+            </div>
 
-                <div class="col-md-6">
-                    <select class="form-control">
-                        <option>Persona origen</option>
-                    </select>
-                </div>
-
-                <div class="col-md-6">
-                    <select class="form-control">
-                        <option>Persona destino</option>
-                    </select>
-                </div>
-
-                <div class="col-12">
-                    <textarea class="form-control" placeholder="Motivo"></textarea>
-                </div>
-
-                <div class="col-12 text-end">
-                    <button class="btn btn-warning">Transferir</button>
-                </div>
-
+            <div class="col-12 text-end">
+                <button id="btn_transferir" class="btn btn-warning">Transferir</button>
             </div>
         </div>
+    </div>
 
     </div>
 </div>

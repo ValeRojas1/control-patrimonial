@@ -27,53 +27,48 @@
         <h3>Gestión de Bienes</h3>
 
         <div class="card p-4 mb-4">
-            <div class="row g-2">
-                <div class="col-md-4">
-                    <input class="form-control" placeholder="Código patrimonial">
-                </div>
-
-                <div class="col-md-4">
-                    <input class="form-control" placeholder="Nombre">
-                </div>
-
-                <div class="col-md-4">
-                    <select class="form-control">
-                        <option>Estado</option>
-                        <option>Activo</option>
-                        <option>Inactivo</option>
-                    </select>
-                </div>
-
-                <div class="col-12">
-                    <textarea class="form-control" placeholder="Descripción"></textarea>
-                </div>
-
-                <div class="col-12 text-end">
-                    <button class="btn btn-primary">Guardar</button>
-                </div>
-            </div>
+    <div class="row g-2">
+        <div class="col-md-4">
+            <input id="txt_codigo" class="form-control" placeholder="Código patrimonial">
         </div>
 
-        <div class="card p-3">
-            <table class="table table-hover">
-                <thead class="table-light">
-                    <tr>
-                        <th>Código</th>
-                        <th>Nombre</th>
-                        <th>Estado</th>
-                        <th>Asignado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>001</td>
-                        <td>Laptop</td>
-                        <td><span class="badge bg-success">Activo</span></td>
-                        <td>Juan</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="col-md-4">
+            <input id="txt_nombre" class="form-control" placeholder="Nombre">
         </div>
+
+        <div class="col-md-4">
+            <select id="txt_estado" class="form-control">
+                <option value="">Estado</option>
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+                <option value="Mantenimiento">Mantenimiento</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <textarea id="txt_descripcion" class="form-control" placeholder="Descripción"></textarea>
+        </div>
+
+        <div class="col-12 text-end">
+            <button id="btn_guardar" class="btn btn-primary">Guardar</button>
+        </div>
+    </div>
+</div>
+
+<div class="card p-3">
+    <table class="table table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Estado</th>
+                <th>Asignado</th>
+            </tr>
+        </thead>
+        <tbody id="tabla_bienes">
+            </tbody>
+    </table>
+</div>
 
     </div>
 </div>
