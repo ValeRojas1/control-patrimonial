@@ -1,42 +1,54 @@
-<h2>Registrar Bien</h2>
+<div class="content">
 
-<form id="formBien">
-    <input type="text" placeholder="Código patrimonial" class="form-control mb-2" required>
-    <input type="text" placeholder="Nombre" class="form-control mb-2" required>
-    <textarea placeholder="Descripción" class="form-control mb-2"></textarea>
+<h3>Gestión de Bienes</h3>
 
-    <select class="form-control mb-2">
-        <option>Seleccione persona</option>
-    </select>
+<div class="card p-4 mb-4">
+    <div class="row g-2">
+        <div class="col-md-4">
+            <input class="form-control" placeholder="Código patrimonial">
+        </div>
 
-    <button class="btn btn-success">Guardar</button>
-</form>
+        <div class="col-md-4">
+            <input class="form-control" placeholder="Nombre">
+        </div>
 
-<h2>Gestión de Bienes</h2>
+        <div class="col-md-4">
+            <select class="form-control">
+                <option>Estado</option>
+                <option>Activo</option>
+                <option>Inactivo</option>
+            </select>
+        </div>
 
-<form class="card p-3 mb-3 shadow">
-    <input type="text" placeholder="Código patrimonial" class="form-control mb-2">
-    <input type="text" placeholder="Nombre" class="form-control mb-2">
-    <textarea placeholder="Descripción" class="form-control mb-2"></textarea>
+        <div class="col-12">
+            <textarea class="form-control" placeholder="Descripción"></textarea>
+        </div>
 
-    <button class="btn btn-success">Guardar</button>
-</form>
+        <div class="col-12 text-end">
+            <button class="btn btn-primary">Guardar</button>
+        </div>
+    </div>
+</div>
 
-<table class="table table-striped shadow">
-    <thead class="table-dark">
-        <tr>
-            <th>Código</th>
-            <th>Nombre</th>
-            <th>Estado</th>
-            <th>Asignado a</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>001</td>
-            <td>Laptop</td>
-            <td>Activo</td>
-            <td>Juan</td>
-        </tr>
-    </tbody>
-</table>
+<div class="card p-3">
+    <table class="table table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Estado</th>
+                <th>Asignado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Laptop</td>
+                <td><span class="badge bg-success">Activo</span></td>
+                <td>Juan</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>

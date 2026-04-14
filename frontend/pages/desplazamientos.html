@@ -1,37 +1,39 @@
-<h2>Desplazamiento de Bienes</h2>
+<div class="content">
 
-<form>
-    <input type="text" placeholder="Número de desplazamiento" class="form-control mb-2">
+<h3>Desplazamiento de Bienes</h3>
 
-    <select class="form-control mb-2">
-        <option>Persona origen</option>
-    </select>
+<div class="card p-4">
+    <div class="row g-3">
 
-    <select class="form-control mb-2">
-        <option>Persona destino</option>
-    </select>
+        <div class="col-md-6">
+            <input class="form-control" placeholder="N° Desplazamiento">
+        </div>
 
-    <textarea placeholder="Motivo" class="form-control mb-2"></textarea>
+        <div class="col-md-6">
+            <input type="date" class="form-control">
+        </div>
 
-    <button class="btn btn-warning">Transferir</button>
-</form>
+        <div class="col-md-6">
+            <select class="form-control">
+                <option>Persona origen</option>
+            </select>
+        </div>
 
-<h2>Desplazamientos</h2>
+        <div class="col-md-6">
+            <select class="form-control">
+                <option>Persona destino</option>
+            </select>
+        </div>
 
-<div class="card p-3 shadow">
-    <form>
-        <input type="text" placeholder="N° Desplazamiento" class="form-control mb-2">
+        <div class="col-12">
+            <textarea class="form-control" placeholder="Motivo"></textarea>
+        </div>
 
-        <select class="form-control mb-2">
-            <option>Persona origen</option>
-        </select>
+        <div class="col-12 text-end">
+            <button class="btn btn-warning">Transferir</button>
+        </div>
 
-        <select class="form-control mb-2">
-            <option>Persona destino</option>
-        </select>
+    </div>
+</div>
 
-        <textarea placeholder="Motivo" class="form-control mb-2"></textarea>
-
-        <button class="btn btn-warning">Transferir</button>
-    </form>
 </div>
